@@ -1,0 +1,806 @@
+* {
+	/* margin: 0; */
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+a{
+	color: #000;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #000;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+::-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+header {
+	padding: 35px 90px 0 69px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header div.left { 
+}
+header div.left a { 
+
+}
+header div.left a img {width: 130px;display: inline-block;}
+header div.middle { 
+}
+header div.middle ul { 
+	display: flex;
+	justify-content: space-between;
+}
+header div.middle ul li {
+	margin-right: 30px;
+}
+header div.middle ul li:last-child{ 
+	margin-right: 0;
+}
+header div.middle ul li a {
+	font-size: 15px;
+	font-weight: 500;
+}
+header div.middle ul li a:hover { 
+	border-bottom: 1px solid #000;
+}
+header div.right { 
+}
+header div.right ul { 
+	display: flex;
+	justify-content: space-between;
+}
+header div.right ul li {
+	margin-right: 30px;
+}
+header div.right ul li:last-child{ 
+	margin-right: 0;
+}
+header div.right ul li a {
+	font-size: 15px;
+	font-weight: 500;
+}
+header div.right ul li a:hover { 
+	border-bottom: 1px solid #000
+}
+header div.right ul li a.button {
+	padding: 10px 18px;
+	background: #ffe4da;
+	color: #ff7d50;
+	border-radius: 9px;
+	font-size: 15px;
+}
+header div.right ul li a.button:hover { 
+	background: #ff7d50;
+	color: #ffe4da;
+	border: #ff7d50;
+}
+#spotlight {
+	padding: 81px;
+}
+#spotlight section.main {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	margin-top: 29px;
+} 
+#spotlight section.main section.left {
+	/* position: relative; */
+	width: 100%;
+	padding-left: 145px;
+	padding-top: 15px;
+}
+#spotlight section.main section.left div.title {}
+#spotlight section.main section.left div.title h1 {font-size: 42px;font-weight: 700;margin-bottom: 35px;width: 76%;}
+#spotlight section.main section.left div.title p {width: 60%;font-size: 14px;margin-bottom: 35px;}
+#spotlight section.main section.left div.form {
+    border: 1px solid #00000091;
+    border-radius: 11px;
+    width: 61%;
+}
+#spotlight section.main section.left div.form form {
+	display: flex;
+	justify-content: space-between;
+}
+#spotlight section.main section.left div.form form input {
+	text-align: center;
+	width: 50%;
+	font-size: 11px;
+}
+#spotlight section.main section.left div.form form a.button{
+	background: #0057fa;
+	color: #fff;
+	font-size: 12px;
+	padding: 9px 23px;
+	border-radius: 9px;
+}
+#spotlight section.main section.right{
+	width: 100%;
+	position: relative;
+}
+#spotlight section.main section.right div.bg {
+	width: 96%;
+	position: absolute;
+	right: 109px;
+	top: -25px;
+} 
+#spotlight section.main section.right div.bg img{
+	width: 100%;
+	display: block;
+}
+#spotlight section.main section.right div.bg img.dots {
+	width: 12%;
+	position: absolute;
+	top: -5px;
+	left: 181px;
+}
+#spotlight section.main section.right div.circle{
+	border-radius: 50%;
+	border: 1px solid #ff7d50;
+	background: #ff7d50;
+	height: 65px;
+	width: 64px;
+	position: absolute;
+	left: 172px;
+	top: -60px;
+}
+#spotlight section.main section.right div.circle img {
+	position: absolute;
+	width: 17%;
+	top: 24px;
+	right: 25px;
+}
+#spotlight section.bottom {
+}
+#spotlight section.bottom h6 {
+	text-align: center;
+	margin-bottom: 35px;
+}
+#spotlight section.bottom div.logos {
+}
+#spotlight section.bottom div.logos ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#spotlight section.bottom div.logos ul li {
+    margin-right: 41px;
+}
+#spotlight section.bottom div.logos ul li img {
+	display: inline-block;
+	width: 82%;
+}
+#hubspot {
+	padding: 20px 72px;
+	height: 100vh;
+}
+#hubspot  section.content {
+	display: flex;
+	justify-content: flex-end;
+}
+#hubspot  section.content div.left {
+	/* width: 47%; */
+	margin-left: 137px;
+}
+#hubspot section.content div.left img {
+	width: 100%;
+	display: inline-block;
+}
+#hubspot section.content div.right {
+	width: 51%;
+	margin-left: 66px;
+}
+#hubspot section.content div.right div.icon {
+	border-radius: 29%;
+	height: 30px;
+	width: 32px;
+	background: #ff7d50;
+	position: relative;
+}
+#hubspot section.content div.right div.icon img.edit_icon {
+	width: 66%;
+	display: inline-block;
+	position: absolute;
+	right: 4px;
+	top: 3px;
+}
+#hubspot section.content div.right h3 {
+	font-size: 38px;
+	font-weight: 700;
+	width: 78%;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+#hubspot section.content div.right p {
+	font-size: 16px;
+	width: 67%;
+	margin-bottom: 26px;
+	color: #000;
+}
+#hubspot section.content div.right a.button {
+	background: #0057fa;
+	color: #fff;
+	font-size: 13px;
+	padding: 13px 18px;
+	border-radius: 9px;
+}
+#hubspot section.content div.right a.button:hover {
+	color: #0057fa;
+	background: #fff;
+}
+#hubspot section.content div.right hr.line {
+	border-bottom: 2px dotted #9d9d9d;
+	width: 37%;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+#hubspot section.content div.right p.contnt{
+	font-size: 15px;
+	width: 71%;
+	margin-bottom: 16px;
+	color: #9d9d9d;
+}
+#hubspot section.content div.right small {
+	color: #9d9d9d;
+	font-size: 13px;
+}
+#hubspot section.content div.right small b {
+	font-style: italic;
+	font-weight: 600;
+	color: #909090;
+}
+#hubspot section.content div.right div.hub_logo {
+	width: 69px;
+	margin-top: 15px;
+}
+#hubspot section.content div.right div.hub_logo img {
+	width: 100%;
+	display: block;
+}
+
+#usa_today {
+	padding: 45px 72px;
+	height: 100vh;
+	background: #f8f8f8;
+}
+#usa_today  section.content {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+#usa_today  section.content div.left {
+	margin-left: 135px;
+}
+#usa_today section.content div.left img {
+	width: 100%;
+	display: inline-block;
+}
+#usa_today section.content div.right {
+	width: 60%;
+	margin-left: 66px;
+}
+#usa_today section.content div.right div.icon {
+	border-radius: 29%;
+	height: 29px;
+	width: 32px;
+	background: #ffc836;
+	/* text-align: center; */
+	position: relative;
+}
+#usa_today section.content div.right div.icon img.edit_icon {
+	width: 61%;
+	display: inline-block;
+	position: absolute;
+	right: 6px;
+	top: 4px;
+}
+#usa_today section.content div.right h3 {
+	font-size: 38px;
+	font-weight: 700;
+	width: 78%;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+#usa_today section.content div.right p {
+	font-size: 16px;
+	width: 67%;
+	margin-bottom: 26px;
+	color: #000;
+}
+#usa_today section.content div.right a.button {
+	background: #0057fa;
+	color: #fff;
+	font-size: 13px;
+	padding: 13px 18px;
+	border-radius: 9px;
+}
+#usa_today section.content div.right a.button:hover {
+	color: #0057fa;
+	background: #fff;
+}
+#usa_today section.content div.right hr.line {
+	border-bottom: 2px dotted #9d9d9d;
+	width: 37%;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+#usa_today section.content div.right p.contnt{
+	font-size: 15px;
+	width: 71%;
+	margin-bottom: 16px;
+	color: #9d9d9d;
+}
+#usa_today section.content div.right small {
+	color: #9d9d9d;
+	font-size: 13px;
+}
+#usa_today section.content div.right small b {
+	font-style: italic;
+	font-weight: 600;
+	color: #909090;
+}
+#usa_today section.content div.right div.hub_logo {
+	width: 69px;
+	margin-top: 15px;
+}
+#usa_today section.content div.right div.hub_logo img {
+	width: 100%;
+	display: block;
+}
+
+
+#iheart_media {
+	padding: 45px 72px;
+	height: 100vh;
+}
+#iheart_media  section.content {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+#iheart_media  section.content div.left {
+	margin-left: 135px;
+}
+#iheart_media section.content div.left img {
+	width: 100%;
+	display: inline-block;
+}
+#iheart_media section.content div.right {
+	width: 60%;
+	margin-left: 66px;
+}
+#iheart_media section.content div.right div.icon {
+	border-radius: 29%;
+	height: 29px;
+	width: 32px;
+	background: #3dd278;
+	position: relative;
+}
+#iheart_media section.content div.right div.icon img.edit_icon {
+	width: 61%;
+	display: inline-block;
+	position: absolute;
+	right: 6px;
+	top: 4px;
+}
+#iheart_media section.content div.right h3 {
+	font-size: 38px;
+	font-weight: 700;
+	width: 78%;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+#iheart_media section.content div.right p {
+	font-size: 16px;
+	width: 67%;
+	margin-bottom: 26px;
+	color: #000;
+}
+#iheart_media section.content div.right a.button {
+	background: #0057fa;
+	color: #fff;
+	font-size: 13px;
+	padding: 13px 18px;
+	border-radius: 9px;
+}
+#iheart_media section.content div.right a.button:hover {
+	color: #0057fa;
+	background: #fff;
+}
+#iheart_media section.content div.right hr.line {
+	border-bottom: 2px dotted #9d9d9d;
+	width: 37%;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+#iheart_media section.content div.right p.contnt{
+	font-size: 15px;
+	width: 71%;
+	margin-bottom: 16px;
+	color: #9d9d9d;
+}
+#iheart_media section.content div.right small {
+	color: #9d9d9d;
+	font-size: 13px;
+}
+#iheart_media section.content div.right small b {
+	font-style: italic;
+	font-weight: 600;
+	color: #909090;
+}
+#iheart_media section.content div.right div.hub_logo {
+	width: 69px;
+	margin-top: 15px;
+}
+#iheart_media section.content div.right div.hub_logo img {
+	width: 100%;
+	display: block;
+}
+
+#cricket {
+	padding: 78px 70px;
+}
+#cricket section.wrapper { 
+
+}
+#cricket h3 {
+	font-size: 37px;
+	font-weight: 700;
+	width: 43%;
+	margin-bottom: 39px;
+	margin-left: 97px;
+}
+#cricket div.middle {width: 85%;margin-left: 98px;}
+#cricket div.middle ul {
+	display: flex;
+	justify-content: space-between;
+	/* position: relative; */
+}
+#cricket div.middle ul li {
+	/* margin-right: 0px; */
+	position: relative;
+}
+#cricket div.middle ul li:last-child { 
+	margin-right: 0;
+}
+#cricket div.middle ul li div.image {
+	width: 93%;
+}
+#cricket div.middle ul li div.image img.box {
+	width: 100%;
+	display: block;
+	border-radius: 8px;
+}
+#cricket div.middle ul li div.image div.icon {
+	border-radius: 50%;
+	background: #fff;
+	height: 46px;
+	width: 47px;
+	right: 34px;
+	top: 15px;
+	position: absolute;
+}
+#cricket div.middle ul li div.image div.icon img.play-icon {
+	width: 10px;
+	display: inline-block;
+	position: absolute;
+	right: 18px;
+	top: 16px;
+}
+#cricket div.middle ul li div.image div.brand_icons1 {
+	background: #fff;
+	font-size: 13px;
+	padding: 3px 27px;
+	border-radius: 9px;
+	position: absolute;
+	left: 10px;
+	bottom: 72px;
+}
+#cricket div.middle ul li div.image div.brand_icons1 img.brand-icon {
+	display: inline-block;
+	width: 23px;
+}
+
+#cricket div.middle ul li div.image div.brand_icons2 {
+	background: #fff;
+	font-size: 13px;
+	padding: 5px 19px;
+	border-radius: 9px;
+	position: absolute;
+	left: 10px;
+	bottom: 72px;
+}
+#cricket div.middle ul li div.image div.brand_icons2 img.brand-icon {
+	display: inline-block;
+	width: 54px;
+}
+#cricket div.middle ul li div.image div.brand_icons3 {
+	background: #fff;
+	font-size: 13px;
+	padding: 8px 10px;
+	border-radius: 9px;
+	position: absolute;
+	left: 10px;
+	bottom: 72px;
+}
+#cricket div.middle ul li div.image div.brand_icons3 img.brand-icon {
+	display: inline-block;
+	width: 74px;
+}
+#cricket div.middle ul li p {
+	width: 69%;
+	font-size: 14px;
+}
+
+#person { 
+	
+}
+#person div.main {
+    padding: 32px;
+}
+#person div.main ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#person div.main ul li {}
+#person div.main ul li:first-child div.image {
+	width: 65%;
+	position: relative;
+}
+#person div.main ul li:first-child div.image img.persons {
+	width: 100%;
+	display: block;
+	border-radius: 6px;
+}
+#person div.main ul li:first-child div.image div.icon_box {
+	position: absolute;
+	top: 231px;
+	left: 13px;
+	padding: 9px 9px;
+	background: #fff;
+}
+#person div.main ul li:first-child div.image div.icon_box img.icon {
+	width: 14%;
+}
+#person div.main ul li:first-child p {
+	width: 58%;
+}
+#person div.main ul li:first-child h5 { 
+
+}
+#person div.main ul li:first-child h6 { 
+
+}
+#person div.main ul li:first-child small { 
+
+}
+#person div.main ul li:last-child div.image {
+	width: 56%;
+	position: relative;
+}
+#person div.main ul li:last-child div.image img.persons {
+	width: 100%;
+	display: block;
+	border-radius: 6px;
+}
+#person div.main ul li:last-child div.image div.icon_box {
+	padding: 7px 12px;
+	background: #fff;
+	position: absolute;
+	top: 240px;
+	left: 9px;
+}
+#person div.main ul li:last-child div.image div.icon_box img.icon {
+	width: 100%;
+}
+#person div.main ul li:last-child p {
+	width: 58%;
+}
+#person div.main ul li:last-child h5 { 
+
+}
+#person div.main ul li:last-child h6 { 
+
+}
+#person div.main ul li:last-child small { 
+
+}
+
+
+
+
+
+#marketing {
+	background: #f8f8f8;
+	padding: 60px 0;
+}
+#marketing section.wrapper { 
+}
+#marketing section.main {
+	/* padding: 26px; */
+}
+#marketing section.main div.head {
+	text-align: center;
+}
+#marketing section.main div.head h3 {
+	margin: 0 auto;
+	font-size: 35px;
+	font-weight: 700;
+	width: 425px;
+}
+#marketing section.main div.promotion {
+	padding: 40px 90px;
+}
+#marketing section.main div.promotion ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#marketing section.main div.promotion ul li {
+    width: 33%;
+    padding: 70px 42px 40px;
+    text-align: center;
+    border-right: 1px dashed #d8d8d8;
+}
+#marketing section.main div.promotion ul li:nth-child(3) {
+	border-right: 0;
+}
+#marketing section.main div.promotion ul li:nth-child(6) {
+	border-right: 0;
+}
+#marketing section.main div.promotion ul li div.illustration {
+	width: 91%;
+	margin: 0 auto;
+}
+#marketing section.main div.promotion ul li div.illustration img.marketting {
+	width: 100%;
+	display: block;
+	margin-bottom: 15px;
+}
+#marketing section.main div.promotion ul li h5 {
+	font-weight: 600;
+	font-size: 19px;
+	margin-bottom: 10px;
+}
+#marketing section.main div.promotion ul li p {
+	font-size: 15px;
+	width: 93%;
+	margin: 0 auto;
+}
+#marketing section.main div.demo {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 475px;
+    margin: 0 auto;
+    border-radius: 4px;
+    position: relative;
+}
+#marketing section.main div.demo div.star {
+	position: absolute;
+	top: -18px;
+	left: 50px;
+	border-radius: 43%;
+	height: 33px;
+	width: 35px;
+	background: #fff;
+	box-shadow: 0px 4px 8px -0.89px #9E9E9E;
+}
+#marketing section.main div.demo div.star img.star_icon {
+	position: absolute;
+	right: 11px;
+	top: 9px;
+	width: 14px;
+}
+#marketing section.main div.demo p {
+	width: 263px;
+	font-size: 13px;
+	margin: 22px;
+}
+#marketing section.main div.demo a.button {
+	background: #0057fa;
+	color: #fff;
+	font-size: 13px;
+	padding: 12px 17px;
+	border-radius: 9px;
+}
+#marketing section.main div.demo a.button:hover {
+	color: #0057fa;
+	background: #fff;
+}
